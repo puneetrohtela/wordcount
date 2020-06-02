@@ -5,7 +5,9 @@
     <title>Text Editor </title>
 </head>
 <body>
-<form action="{% url 'count' %}" method="POST">
+<div class=""
+<form action="{% url 'count' %}" method="post">
+    {% csrf_token %}
     <textarea name="textarea" cols="80" rows="20"></textarea>
     <br>
     <input type="submit" value="submit"/>
